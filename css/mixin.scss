@@ -1,0 +1,22 @@
+@mixin icon {
+  transition: 0.3s all ease;
+  width: 24px;
+  height: 2px;
+  background-color: $first-color;
+  backface-visibility: hidden;
+  border-radius: 0;
+}
+@mixin link-active {
+  content: "";
+  left: 0;
+  top: auto;
+  height: 2px;
+  width: 20px;
+  bottom: -8px;
+  color: $first-color;
+  background-color: $first-color;
+  transition: 0.4s ease-in-out;
+  border-radius: 50px;
+  position: absolute;
+}
+$first-color: #ea1c29;
